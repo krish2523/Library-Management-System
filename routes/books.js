@@ -7,6 +7,7 @@ const {users} = require("../data/users.json");
 const router = express.Router();
 
 const {UserModel,BookModel}= require("../models")
+const {getAllBooks} = require("../controllers/books-controllers");
 /* ## /books
 Get: Get all books*/
 router.get("/",(req,res)=>{
